@@ -5,4 +5,4 @@ const JOKE = 'I told my agent it was wrong. It thanked me, said I was absolutely
 
 const out = process.env.OUTPUT_DIR ?? '/output';
 mkdirSync(out, { recursive: true });
-writeFileSync(`${out}/entry.txt`, `${JOKE}\n`);
+writeFileSync(`${out}/entry.txt`, `${JOKE.trim()}\n`);
